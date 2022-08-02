@@ -1,6 +1,6 @@
 import "./NavBar.css";
 
-const NavBar = () => {
+const NavBar = (props) => {
   return (
     <div className="navbar-container">
       <h2 className="logo-text">
