@@ -1,0 +1,19 @@
+.navbar-container {
+  height: 160px;
+  background-color: #7b9dc3;
+  color: #ffffff;
+  text-align: center;
+  font-size: 36px;
+
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  font-family: "Varela Round", sans-serif;
+}
+
+.logo-text {
+  padding-top: 3rem;
+}
+
+.muted-text {
+  color: #f7ff84;
+}
