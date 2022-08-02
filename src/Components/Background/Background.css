@@ -2,4 +2,5 @@
   z-index: -1;
   background-color: #ebf2f7;
   min-height: 100vh;
+  position: relative;
 }
