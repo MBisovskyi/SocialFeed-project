@@ -1,6 +1,6 @@
 import NavBar from "./Components/NavBar/NavBar";
-import Background from "./Components/Background/Background";
 import CreatePost from "./Components/CreatePost/CreatePost";
+import DisplayPosts from "./Components/DisplayPosts/DisplayPosts";
 import "./App.css";
 
 function App() {
@@ -9,9 +9,9 @@ function App() {
       <div>
         <NavBar />
       </div>
-      <div>
+      <div className="container">
         <CreatePost />
-        <Background />
+        <DisplayPosts />
       </div>
     </div>
   );
