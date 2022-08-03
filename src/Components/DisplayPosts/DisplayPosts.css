@@ -9,9 +9,15 @@
 }
 
 .post-entries {
-  width: 83%;
-  margin: 2rem;
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin: 2rem auto;
   padding: 1rem;
+}
+
+.text-field {
+  width: 90%;
 }
 
 .name-text {
@@ -27,4 +33,31 @@
   font-weight: 400;
   padding-bottom: 1rem;
   border-bottom: 2px solid #82a6cf;
+}
+
+.likes-container {
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.likes-container button {
+  height: 35px;
+  width: 35px;
+  border-radius: 10px;
+  border-style: none;
+}
+
+.likes-container img {
+  height: 25px;
+  width: 25px;
+}
+
+.liked {
+  background-color: green;
+}
+
+.disliked {
+  background-color: red;
 }

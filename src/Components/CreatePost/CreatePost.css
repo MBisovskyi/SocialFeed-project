@@ -67,7 +67,7 @@
   height: 180px;
 }
 
-button {
+.right-container button {
   margin-top: 15rem;
   height: 50px;
   background-color: #82a6cf;
@@ -80,12 +80,12 @@ button {
   font-family: "Varela Round", sans-serif;
 }
 
-button:hover {
+.right-container button:hover {
   border: 3px solid #82a6cf;
   color: #f7ff84;
 }
 
-button:active {
+.right-container button:active {
   background-color: #f7ff84;
   color: #82a6cf;
 }
