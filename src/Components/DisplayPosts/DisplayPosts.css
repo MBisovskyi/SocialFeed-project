@@ -1,12 +1,30 @@
+.display-posts-wrap {
+  width: 80%;
+  background-color: white;
+  margin: auto;
+  border-radius: 40px;
+  box-shadow: 6px 6px 6px gray;
+  font-family: "Varela Round", sans-serif;
+  color: #82a6cf;
+}
+
+.post-entries {
+  width: 83%;
+  margin: 2rem;
+  padding: 1rem;
+}
+
 .name-text {
+  font-family: "Varela Round", sans-serif;
+  font-size: 28px;
   font-weight: 800;
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
 }
 
 .post-text {
+  font-family: "Varela Round", sans-serif;
+  font-size: 26px;
   font-weight: 400;
-  margin-bottom: 1em;
-  padding-bottom: 1em;
-  margin-right: 4em;
+  padding-bottom: 1rem;
   border-bottom: 2px solid #82a6cf;
 }

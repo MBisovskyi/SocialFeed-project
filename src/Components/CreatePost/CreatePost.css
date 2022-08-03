@@ -51,13 +51,15 @@
 }
 
 .name-input-field {
-  height: 2.3rem;
+  font-family: "Varela Round", sans-serif;
+  height: 2.5rem;
   font-size: 28px;
   font-weight: 800;
   color: #90b8e5;
 }
 
 .post-input-field {
+  font-family: "Varela Round", sans-serif;
   margin-top: 2rem;
   font-size: 26px;
   font-weight: 400;

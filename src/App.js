@@ -14,19 +14,9 @@ function App() {
 
   return (
     <div>
-      <div className="container">
-        <NavBar />
-        <div>
-          <div>
-            <CreatePost createNewPostProperty={addNewPost} />
-          </div>
-          <div className="all-posts-container">
-            <div className="single-post-container">
-              <DisplayPosts parentPost={postEntries} />
-            </div>
-          </div>
-        </div>
-      </div>
+      <NavBar />
+      <CreatePost createNewPostProperty={addNewPost} />
+      <DisplayPosts parentPost={postEntries} />
     </div>
   );
 }
