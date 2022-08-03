@@ -54,10 +54,14 @@
   width: 25px;
 }
 
-.liked {
+.liked-status {
   background-color: green;
 }
 
-.disliked {
+.disliked-status {
   background-color: red;
+}
+
+.neutral-status {
+  background-color: white;
 }
