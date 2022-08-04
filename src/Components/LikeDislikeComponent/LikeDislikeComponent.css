@@ -1,6 +1,7 @@
 .like-dislike-wrap {
   display: flex;
   flex-direction: column;
+  margin-top: 2rem;
 }
 
 .like-dislike-wrap img {
