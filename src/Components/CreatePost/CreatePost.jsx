@@ -1,11 +1,24 @@
 import React, { useState, useEffect } from "react";
-
 import "./CreatePost.css";
 
 const CreatePost = (props) => {
   const [userName, setUserName] = useState("");
   const [userText, setUserText] = useState("");
   const [dateTime, setDateTime] = useState("");
+  const month = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
 
   useEffect(() => {
     setUserName("");
@@ -13,10 +26,35 @@ const CreatePost = (props) => {
     setDateTime("");
   }, [props.createNewPostProperty]);
 
+  let newDate = new Date();
+  let monthName = month[newDate.getMonth()];
+  let day = newDate.getDate();
+  let year = newDate.getFullYear();
+  let hours = newDate.getHours();
+  let minutes = newDate.getMinutes();
+  let formattedMinutes = addZeroToMinutes(minutes);
+  let formattedTime = twelveHoursTimeFormatter(hours, formattedMinutes);
+
+  function addZeroToMinutes(minutes) {
+    if (minutes < 10) {
+      minutes = "0" + minutes;
+    }
+    return minutes;
+  }
+
+  function twelveHoursTimeFormatter(hours, minutes) {
+    if (hours > 12) {
+      hours = hours - 12;
+      return `${hours}:${minutes} PM`;
+    } else {
+      return `${hours}:${minutes} AM`;
+    }
+  }
+
   function handleSubmit(event) {
     event.preventDefault();
     let newPost = {
-      postDate: Date(),
+      postDate: `Post added: ${monthName} ${day} ${year} at ${formattedTime}`,
       name: userName,
       text: userText,
     };
