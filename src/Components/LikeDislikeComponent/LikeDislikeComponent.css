@@ -8,9 +8,8 @@
 }
 
 .like-dislike-wrap button:hover {
-  border: 2px solid black;
+  transform: scale(1.1);
 }
-
 .like-inactive {
   margin: 5px;
   height: 35px;
