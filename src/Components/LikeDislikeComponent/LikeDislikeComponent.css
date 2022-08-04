@@ -10,6 +10,7 @@
 .like-dislike-wrap button:hover {
   transform: scale(1.1);
 }
+
 .like-inactive {
   margin: 5px;
   height: 35px;

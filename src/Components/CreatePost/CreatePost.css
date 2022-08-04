@@ -17,6 +17,7 @@ textarea:focus {
 .wrap {
   background-color: white;
   width: 80%;
+  max-width: 1920px;
   margin: 2rem auto;
   padding: 2rem 0;
   box-shadow: 6px 6px 6px gray;
