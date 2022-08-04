@@ -7,6 +7,10 @@
   margin-top: 3px;
 }
 
+.like-dislike-wrap button:hover {
+  border: 2px solid black;
+}
+
 .like-inactive {
   margin: 5px;
   height: 35px;
