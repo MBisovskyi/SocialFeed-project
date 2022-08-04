@@ -1,10 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+
 import "./CreatePost.css";
 
 const CreatePost = (props) => {
   const [userName, setUserName] = useState("");
   const [userText, setUserText] = useState("");
   const [dateTime, setDateTime] = useState("");
+
+  useEffect(() => {
+    setUserName("");
+    setUserText("");
+    setDateTime("");
+  }, [props.createNewPostProperty]);
 
   function handleSubmit(event) {
     event.preventDefault();
