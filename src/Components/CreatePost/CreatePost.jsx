@@ -26,16 +26,16 @@ const CreatePost = (props) => {
     setDateTime("");
   }, [props.createNewPostProperty]);
 
-  let newDate = new Date();
-  let monthName = month[newDate.getMonth()];
-  let day = newDate.getDate();
-  let year = newDate.getFullYear();
-  let hours = newDate.getHours();
-  let minutes = newDate.getMinutes();
-  let formattedMinutes = addZeroToMinutes(minutes);
+  let date = new Date();
+  let monthName = month[date.getMonth()];
+  let day = date.getDate();
+  let year = date.getFullYear();
+  let hours = date.getHours();
+  let minutes = date.getMinutes();
+  let formattedMinutes = minutesFormatter(minutes);
   let formattedTime = twelveHoursTimeFormatter(hours, formattedMinutes);
 
-  function addZeroToMinutes(minutes) {
+  function minutesFormatter(minutes) {
     if (minutes < 10) {
       minutes = "0" + minutes;
     }
