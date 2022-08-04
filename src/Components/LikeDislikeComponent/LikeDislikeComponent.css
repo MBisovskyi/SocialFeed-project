@@ -1,0 +1,40 @@
+.like-dislike-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.like-dislike-wrap img {
+  margin-top: 3px;
+}
+
+.like-inactive {
+  margin: 5px;
+  height: 35px;
+  width: 35px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.like-active {
+  margin: 5px;
+  height: 35px;
+  width: 35px;
+  background-color: green;
+  border-radius: 10px;
+}
+
+.dislike-inactive {
+  margin: 5px;
+  height: 35px;
+  width: 35px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.dislike-active {
+  margin: 5px;
+  height: 35px;
+  width: 35px;
+  background-color: red;
+  border-radius: 10px;
+}
