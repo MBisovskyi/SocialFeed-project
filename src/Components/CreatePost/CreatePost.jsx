@@ -40,13 +40,16 @@ const CreatePost = (props) => {
           onChange={(event) => setDateTime(event.target.value)}
           value={dateTime}
         ></p>
-        <textarea
+        <input
+          minLength="4"
+          required
           type="text"
           className="name-input-field input-field-style"
           value={userName}
           onChange={(event) => setUserName(event.target.value)}
-        ></textarea>
+        ></input>
         <textarea
+          required
           type="text"
           className="post-input-field input-field-style"
           value={userText}

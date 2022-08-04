@@ -1,3 +1,19 @@
+input {
+  border: 1px solid gray;
+}
+
+input:focus {
+  background-color: #f7f8ed;
+  outline: none !important;
+  border: 2px solid gray;
+}
+
+textarea:focus {
+  background-color: #f7f8ed;
+  outline: none !important;
+  border: 2px solid gray;
+}
+
 .wrap {
   background-color: white;
   width: 80%;
