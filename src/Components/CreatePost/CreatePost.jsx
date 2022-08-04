@@ -95,7 +95,7 @@ const CreatePost = (props) => {
         ></textarea>
       </div>
       <div className="right-container">
-        <button type="submit">Submit</button>
+        <button type="submit">create</button>
       </div>
     </form>
   );
