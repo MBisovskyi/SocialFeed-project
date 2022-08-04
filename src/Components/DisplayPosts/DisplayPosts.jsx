@@ -8,9 +8,9 @@ const DisplayPosts = (props) => {
         return (
           <div key={index} className="post-entries">
             <div className="text-field">
-              <p className="post-date-time">{entry.postDate}</p>
               <p className="name-text">{entry.name}</p>
               <p className="post-text">{entry.text}</p>
+              <p className="post-date-time">{entry.postDate}</p>
             </div>
             <div className="likes-container">
               <LikeDislikeComponent />
