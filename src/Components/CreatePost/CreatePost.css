@@ -17,7 +17,6 @@ textarea:focus {
 .wrap {
   background-color: white;
   width: 80%;
-  max-width: 1920px;
   margin: 2rem auto;
   padding: 2rem 0;
   box-shadow: 6px 6px 6px gray;
@@ -101,6 +100,7 @@ textarea:focus {
   border: 3px solid #82a6cf;
   color: #f7ff84;
   box-shadow: 2px 2px 4px gray;
+  transform: scale(1.01);
 }
 
 .right-container button:active {
