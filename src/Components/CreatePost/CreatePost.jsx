@@ -4,10 +4,12 @@ import "./CreatePost.css";
 const CreatePost = (props) => {
   const [userName, setUserName] = useState("");
   const [userText, setUserText] = useState("");
+  const [dateTime, setDateTime] = useState("");
 
   function handleSubmit(event) {
     event.preventDefault();
     let newPost = {
+      postDate: Date(),
       name: userName,
       text: userText,
     };
@@ -26,6 +28,11 @@ const CreatePost = (props) => {
         </div>
       </div>
       <div className="middle-container">
+        <p
+          type="date"
+          onChange={(event) => setDateTime(event.target.value)}
+          value={dateTime}
+        ></p>
         <textarea
           type="text"
           className="name-input-field input-field-style"
